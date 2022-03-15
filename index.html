@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | [Blogr]</title>
 
@@ -15,36 +16,50 @@
   </style>
 </head>
 <body>
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+  <div class="hero">
+    <nav>
+      <div class="left-menu">
+      <div class="logo"><h1>Blogr</h1></div>
+      <div class="dropdown">
+        <p>Product <img src="./images/icon-arrow-light.svg" alt="dropdown arrow"></p>
+          <div class="dropdown-content">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a> 
+          </div>
+      </div>
+  <div class="dropdown">
+    <p>Company <img src="./images/icon-arrow-light.svg" alt="dropdown arrow"></p>
+      <div class="dropdown-content">
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+  </div>
+  <div class="dropdown">
+    <p>Connect <img src="./images/icon-arrow-light.svg" alt="dropdown arrow"></p>
+      <div class="dropdown-content">
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>  
+      </div>
+  </div>
+</div>
+  <div class="account">
+  <button class="btn dark" type="submit"><p>Login</p></button>
+  <button class="btn light" type="submit">Sign Up</button> 
+  </div>
+</nav>
 
   A modern publishing platform
   Grow your audience and build your online brand
 
   Start for Free
   Learn More
-
+</div>
   Designed for the future
 
   Introducing an extensible editor
