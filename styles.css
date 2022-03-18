@@ -15,7 +15,8 @@ font-family: 'Ubuntu', sans-serif;
     background-image: url("./images/bg-pattern-intro-desktop.svg"), linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)); 
     background-size: 200%;
     background-position-x: -300px; 
-    background-position-y: center;  
+    background-position-y: center;
+    border-bottom-left-radius: 50px;  
     height: 100vh;
     width: 100%;
     color: hsl(0, 0%, 100%);
@@ -28,6 +29,13 @@ nav{
     padding: 70px 30px;
 }
 
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+
+
 .left-menu{
     display: flex;
     justify-content: space-between;
@@ -39,7 +47,7 @@ nav{
 .logo{
     font-family: 'ubuntu', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 24px;
 }
 
 .dropdown{
@@ -48,10 +56,7 @@ nav{
     cursor: pointer;
   
 }
-.dropdown p{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-}
+
 
 .dropdown p:hover{
     text-decoration: underline;
@@ -112,4 +117,37 @@ nav{
 .light:hover{
     color: hsl(0, 0%, 100%);
     background-color: rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.outline{
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.outline:hover{
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    color: hsl(353, 100%, 62%);
+    font-weight: 500;
+}
+
+.landing{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   line-height: 2;
+   padding-top: 100px;
+}
+
+.landing h1{
+    font-size: 3rem;
+}
+.landing .info{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 50px;
+    width: 30%;
 }
